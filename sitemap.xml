@@ -4,7 +4,7 @@
   <url>
     <loc>https://blog.yifengzis.cn/2019/11/15/Nginx%25E7%259A%2584%25E5%25AE%2589%25E8%25A3%2585/</loc>
     
-    <lastmod>2019-11-18T08:39:25.801Z</lastmod>
+    <lastmod>2020-04-01T02:44:14.246Z</lastmod>
     
   </url>
   
@@ -51,20 +51,6 @@
   </url>
   
   <url>
-    <loc>https://blog.yifengzis.cn/books/index.html</loc>
-    
-    <lastmod>2019-11-08T03:32:45.102Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.yifengzis.cn/categories/index.html</loc>
-    
-    <lastmod>2019-11-08T03:32:45.102Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.yifengzis.cn/links/index.html</loc>
     
     <lastmod>2019-11-08T03:32:45.102Z</lastmod>
@@ -72,7 +58,21 @@
   </url>
   
   <url>
+    <loc>https://blog.yifengzis.cn/books/index.html</loc>
+    
+    <lastmod>2019-11-08T03:32:45.102Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.yifengzis.cn/tags/index.html</loc>
+    
+    <lastmod>2019-11-08T03:32:45.102Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.yifengzis.cn/categories/index.html</loc>
     
     <lastmod>2019-11-08T03:32:45.102Z</lastmod>
     
