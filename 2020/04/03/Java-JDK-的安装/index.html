@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="Yi疯子的忧伤的博客">
 <meta property="og:description" content="Java(JDK)的介绍JDK Java SE Development kit(JDK)    java开发工具包 &amp;emsp;&amp;emsp;JDK全称Java SE Development kit(JDK)，即java标准版开发包，是Oracle提供的一套用于开发java应用程序的开发包，它提供编译，运行java程序所需要的各种工具和资源，包括java编译器，java运行时环境，以及常用的java">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-03T04:00:24.415Z">
+<meta property="og:updated_time" content="2020-04-03T04:40:04.339Z">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
   <link rel="canonical" href="https://blog.yifengzis.cn/2020/04/03/Java-JDK-%E7%9A%84%E5%AE%89%E8%A3%85/index.html">
@@ -317,7 +317,7 @@
 
   
   
-<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+<aside class="sidebar sidebar-toc collapse in" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
@@ -325,6 +325,7 @@
     </nav>
   </div>
 </aside>
+
 
 <main class="main" role="main">
   <div class="content">
@@ -399,7 +400,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先把下载的jdk的软件包复制到服务器上</span></span><br><span class="line"><span class="comment"># 执行解压操作，下面操作是解压到`opt`目录下，如果想解压到当前目录下，取消`-C /opt/`操作即可</span></span><br><span class="line">tar -zxvf  jdk-8u241-linux-x64.tar.gz -C /opt/</span><br></pre></td></tr></table></figure>
 
 <p>设置java的环境变量</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 接着就是设置java的环境变量了，下面的的设置全局变量的方法</span></span><br><span class="line"><span class="comment"># 执行`vim /etc/bashrc`操作，把下面的代码写入`/etc/bashrc`文件内</span></span><br><span class="line">~~ 要写入文本的代码 start ~~</span><br><span class="line"><span class="comment"># jdk1.8.0_241</span></span><br><span class="line">JAVA_HOME=/opt/jdk1.8.0_241</span><br><span class="line">JRE_HOME=/opt/jdk1.8.0_241/jre</span><br><span class="line">PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$JRE_HOME</span>/bin:<span class="variable">$PATH</span></span><br><span class="line">CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME JRE_HOME PATH CLASSPATH</span><br><span class="line">~~ 要写入文本的代码 end ~~</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 接着就是设置java的环境变量了，下面的是设置全局变量的方法</span></span><br><span class="line"><span class="comment"># 执行`vim /etc/bashrc`操作，把下面的代码写入`/etc/bashrc`文件内</span></span><br><span class="line">~~ 要写入文本的代码 start ~~</span><br><span class="line"><span class="comment"># jdk1.8.0_241</span></span><br><span class="line">JAVA_HOME=/opt/jdk1.8.0_241</span><br><span class="line">JRE_HOME=/opt/jdk1.8.0_241/jre</span><br><span class="line">PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$JRE_HOME</span>/bin:<span class="variable">$PATH</span></span><br><span class="line">CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME JRE_HOME PATH CLASSPATH</span><br><span class="line">~~ 要写入文本的代码 end ~~</span><br></pre></td></tr></table></figure>
 
 <p>使环境变量生效，并检验java是否安装成功</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 写入保存之后，使刚刚设置的环境变量生效</span></span><br><span class="line"><span class="built_in">source</span> /etc/bashrc</span><br><span class="line"><span class="comment"># 我们来试验下，如果执行成功输出jdk的版本号就说明安装成功了</span></span><br><span class="line">java -version</span><br><span class="line">~~ 输出的终端信息 start ~~</span><br><span class="line">java version <span class="string">"1.8.0_241"</span></span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_241-b07)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.241-b07, mixed mode)</span><br><span class="line">~~ 输出的终端信息 end ~~</span><br></pre></td></tr></table></figure>
@@ -491,6 +492,7 @@
   </div>
   </div>
 </nav>
+
   
 <!-- Modal -->
 <div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
