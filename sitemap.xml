@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.yifengzis.cn/2020/04/03/Java-JDK-%25E7%259A%2584%25E5%25AE%2589%25E8%25A3%2585/</loc>
+    <loc>https://blog.yifengzis.cn/2020/04/03/Apache-tomcat%25E7%259A%2584%25E5%25AE%2589%25E8%25A3%2585/</loc>
     
-    <lastmod>2020-04-03T04:40:04.339Z</lastmod>
+    <lastmod>2020-04-03T07:57:24.597Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.yifengzis.cn/2019/11/18/Nginx%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8/</loc>
     
-    <lastmod>2020-04-02T08:54:27.806Z</lastmod>
+    <lastmod>2020-04-03T05:34:52.876Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.yifengzis.cn/2020/04/03/Java-JDK-%25E7%259A%2584%25E5%25AE%2589%25E8%25A3%2585/</loc>
+    
+    <lastmod>2020-04-03T04:40:04.339Z</lastmod>
     
   </url>
   
